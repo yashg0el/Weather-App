@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App — Modern</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🌤️ Weather App</h1>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name..." aria-label="City name" />
+      <div class="buttons">
+        <button id="search-btn">Search</button>
+        <button id="location-btn">📍 My Location</button>
+      </div>
+    </div>
+
+    <div id="weather-info" class="weather-card hidden" aria-live="polite">
+      <h2 id="city-name"></h2>
+      <img id="weather-icon" src="" alt="Weather icon" />
+      <p id="condition"></p>
+      <div class="details">
+        <p>🌡️ <strong>Temp:</strong> <span id="temp"></span>°C</p>
+        <p>💧 <strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p>💨 <strong>Wind:</strong> <span id="wind"></span> km/h</p>
+      </div>
+    </div>
+
+    <p id="error" class="error hidden" role="alert"></p>
+  </div>
+
+  <footer>
+    <p>Made with ❤️</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
